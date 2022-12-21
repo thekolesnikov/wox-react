@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './App.css';
+import MainLayout from './components/MainLayout/MainLayout';
+import HomePage from './components/HomePage/HomePage';
+import CataloguePage from './components/CataloguePage/CataloguePage';
+import PurchasePage from './components/PurchasePage/PurchasePage';
+import NotMade from './components/NotMade/NotMade';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<MainLayout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path="/:lang" element={<HomePage />} />
+                    <Route
+                        path="/:lang/catalogue"
+                        element={<CataloguePage />}
+                    />
+                    <Route
+                        path="/:lang/purchase/:id"
+                        element={<PurchasePage />}
+                    />
+                    <Route path="/:lang/about" element={<NotMade />} />
+                    <Route path="/:lang/contacts" element={<NotMade />} />
+                    <Route path="/:lang/not-made" element={<NotMade />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,0 +1,128 @@
+.sale {
+    margin: 0 -10px 100px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sale__body {
+    padding: 0 10px;
+}
+
+.sale__title {
+    margin: 0 0 34px 18px;
+    max-width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.sale__mobile {
+    display: none;
+}
+
+.sale__mobile_text {
+    display: none;
+}
+
+.sale__text {
+    margin-bottom: 44px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 112%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.sale__button {
+    display: block;
+    padding: 22px 47px;
+    background: #e88eff;
+    box-shadow: 0px 0px 10px #e6aaf5;
+    font-family: 'STRRETCH SANS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 111.5%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.sale__button:hover {
+    transition: all 0.3s ease 0s;
+    background: #c75def;
+    transform: scale(1.01);
+    color: #ffffff;
+}
+
+.sale__image {
+    flex: 0 1 65%;
+}
+
+.sale__image_small {
+    display: none;
+}
+
+.sale__image:hover {
+    transition: all 0.6s ease 0s;
+    transform: scale(1.01);
+}
+
+.sale__image_small:hover {
+    transition: all 0.6s ease 0s;
+    transform: scale(1.01);
+}
+
+.sale__image img {
+    max-width: 100%;
+}
+
+.swiper__img {
+    width: 780px;
+    height: 511px;
+    object-fit: cover;
+}
+
+.swiper__container {
+    flex: 0 1 800px;
+    padding: 0 10px;
+    width: 780px;
+}
+
+@media (max-width: 1030px) {
+    .sale__title {
+        font-size: 18px;
+    }
+    .sale__text {
+        font-size: 24px;
+    }
+    .sale__button {
+        display: inline-block;
+        padding: 17px 36px;
+        font-size: 10px;
+    }
+
+    .swiper__img {
+        max-width: 780px;
+        height: 471px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .sale__title {
+        font-size: 14px;
+    }
+    .sale__text {
+        font-size: 20px;
+    }
+    .sale__button {
+        display: inline-block;
+        padding: 15px 28px;
+        font-size: 10px;
+    }
+}

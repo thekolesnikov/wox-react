@@ -1,0 +1,297 @@
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 420px;
+    margin: 0 -10px 100px -10px;
+}
+
+.sale__carousel_purchase {
+    display: none;
+}
+
+.purchase__body {
+    flex: 0 0 301px;
+    padding: 0 20px;
+}
+
+.catalogue__item_purchase {
+    padding: 0 10px;
+}
+
+.purchase__title {
+    margin-bottom: 50px;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.purchase__subtitle {
+    margin-bottom: 30px;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+}
+
+.purchase__size {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.purchase__size_item {
+    font-family: 'STRRETCH SANS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.4);
+    background: #ffffff;
+}
+
+.purchase__size_item:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.2);
+}
+
+.purchase__size_item_bold {
+    color: #000000;
+    transform: scale(1.2);
+    transition: all 0.2s ease 0s;
+}
+
+.purchase__color {
+    margin-bottom: 30px;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+}
+
+.purchase__color_choice {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.purchase__color_item {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.purchase__color_item-1 {
+    background: #d4b299;
+    position: relative;
+}
+
+.purchase__color_item-1:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.purchase__color_item-2 {
+    background: #d2c2da;
+}
+
+.purchase__color_item-3 {
+    background: #eeebd1;
+}
+
+.purchase__color_active {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.5) rotate(360deg);
+    padding: 5px;
+    border: 1px dashed green;
+}
+.purchase__color_item:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.24);
+}
+
+.purchase__price {
+    margin-bottom: 50px;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.purchase__quantity {
+    padding: 19px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.purchase__quantity button {
+    background: #ffffff;
+}
+
+.purchase_minus img {
+    position: relative;
+    top: 7px;
+}
+
+.purchase_plus:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.18);
+}
+.purchase_minus:hover {
+    transition: all 0.3s ease 0s;
+    transform: scale(1.23);
+}
+
+.purchase__quantity_item {
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+}
+
+.purchase_plus img {
+    position: relative;
+    top: 1px;
+}
+
+.choose {
+    padding: 21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+}
+
+.choose__text_red {
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #c10909;
+    margin-bottom: 0;
+}
+
+.choose__brtop {
+    border-top: 1px solid #000000;
+}
+
+.choose__arrow:hover {
+    transition: all 0.1s ease 0s;
+    transform: scale(1.11);
+}
+
+.choose__arrow img {
+    background: #ffffff;
+}
+
+.purchase__description {
+    margin: 50px 0;
+}
+
+.purchase__description_title {
+    margin-bottom: 30px;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+}
+
+.purchase__description_text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    letter-spacing: 0.05em;
+    color: black;
+}
+
+.choose__text {
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.choose__text:hover {
+    transition: all 0.1s ease 0s;
+    transform: scale(1.04);
+}
+
+.purchase__photos {
+    flex: 0 1 421px;
+    padding: 0 10px;
+}
+
+.purchase__image img {
+    max-width: 100%;
+}
+
+.purchase__image_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addtocart__badge {
+    padding: 10px 0;
+    font-size: 400px;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: #47c977;
+    opacity: 0.8;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    transition: bottom ease 0.4s;
+}
+
+.none {
+    bottom: -100%;
+}
+
+/*****************************/
+
+.label_mb {
+    margin-bottom: 133px;
+}
+
+.purchase__collection {
+    margin-bottom: 268px;
+}
+
+.purchase__row {
+    margin: 0 -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchase__row_mb {
+    margin-bottom: 100px;
+}

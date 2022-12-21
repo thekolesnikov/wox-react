@@ -1,0 +1,150 @@
+.header {
+    margin: 29px auto 78px auto;
+}
+
+.header__wox {
+    display: flex;
+    align-items: center;
+}
+
+.header__leftside {
+    flex: 0 1 35%;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 17px;
+}
+
+.header__dot {
+    height: 5px;
+    width: 5px;
+    background: #000000;
+    transform: rotate(-45deg);
+    margin-right: 24px;
+}
+
+.header__brand {
+    width: 72px;
+    font-family: 'STRRETCH SANS';
+    font-size: 8px;
+    line-height: 129%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.header__center {
+    flex: 0 1 32.9%;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__nav_item {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 111.5%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__nav_item:hover {
+    box-shadow: 0 2px 0 #818181;
+}
+
+.header__nav_item_active {
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 111.5%;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__rightside {
+    flex: 0 1 32.9%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header__language {
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 111.5%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-left: 21px;
+    color: #000000;
+}
+
+.header__language_active {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header__language:hover {
+    box-shadow: 0 2px 0 #818181;
+}
+
+.header__basket {
+    margin-left: 29px;
+    position: relative;
+    top: -1px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.header__basket:hover {
+    transform: scale(1.17);
+}
+
+.cart__add {
+    position: absolute;
+    top: -8px;
+    right: -7px;
+    background: #e88eff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111.5%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f5ffd7;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 1030px) {
+    .header {
+        margin: 29px 25px 78px 25px;
+    }
+    .header__center {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav-item {
+        display: none;
+    }
+    .header__item {
+        display: none;
+    }
+}

@@ -1,0 +1,116 @@
+.catalogue {
+    margin-bottom: 120px;
+}
+
+.catalogue__slider {
+    margin: 0 -10px 102px -10px;
+}
+
+.catalogue__slider_line {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .catalogue__slider-line-mobile, .catalogue__slider-line-mobile-first, .catalogue__slider-line-mobile-second{
+    position: relative;
+    left: 0px;
+    transition: left 0.5s ease;
+  } */
+
+.catalogue__item {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.catalogue__image {
+    margin-bottom: 18px;
+}
+
+.catalogue__image img:hover {
+    transition: all 0.6s ease 0s;
+    transform: scale(1.03);
+}
+
+.newcatalogue__image img:hover {
+    transition: all 0.6s ease 0s;
+    transform: scale(1.03);
+}
+
+.catalogue__svg {
+    position: absolute;
+    top: -27px;
+    left: -26px;
+}
+
+.catalogue__description {
+    max-width: 152px;
+    margin-bottom: 32px;
+    font-family: 'STRRETCH SANS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 111.5%;
+}
+
+.catalogue__item_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalogue__price {
+    font-family: 'STRRETCH SANS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 111.5%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.catalogue__link {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    color: #009ef8;
+}
+
+.catalogue__link:hover {
+    transition: all 0.3s ease 0s;
+    color: #005c8a;
+    font-weight: 600;
+}
+
+.newcatalogue__link:hover {
+    transition: all 0.3s ease 0s;
+    color: #005c8a;
+    font-weight: 600;
+}
+
+.catalogue__button {
+    padding: 22px 48px;
+    display: inline-block;
+    background: #e88eff;
+    box-shadow: 0px 0px 10px #e6aaf5;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 111.5%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.catalogue__button:hover {
+    transition: all 0.3s ease 0s;
+    background: #c75def;
+    transform: scale(1.01);
+    color: #ffffff;
+}

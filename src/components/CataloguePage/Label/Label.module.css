@@ -1,0 +1,28 @@
+.label {
+    margin-bottom: 93px;
+}
+
+.label__body {
+    overflow: hidden;
+    padding: 8px 0;
+    background: #f5ffd7;
+}
+
+.label__text {
+    white-space: nowrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'STRRETCH SANS';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.label__text_mobile {
+    display: none;
+}

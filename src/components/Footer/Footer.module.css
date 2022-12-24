@@ -194,3 +194,60 @@
     font-size: 18px;
     opacity: 0.8;
 }
+
+@media (max-width: 1140px) {
+    .subscribe__email_input {
+        width: auto;
+    }
+
+    .subscribe__email_input::placeholder {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe__title {
+        font-size: 30px;
+        line-height: 130.5%;
+    }
+    .footer {
+        margin: 100px 0 70px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer {
+        display: block;
+    }
+    .subscribe__email_input::placeholder {
+        opacity: 1;
+    }
+    .footer__links {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin: 70px 0;
+    }
+    .footer__socials_inline {
+        display: block;
+    }
+    .subscribe__socials {
+        display: block;
+    }
+    .subscribe__social_item {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .footer__allrights {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 410px) {
+    .subscribe__email_input {
+        width: 170px;
+    }
+}

@@ -309,3 +309,83 @@ button {
     bottom: -100%;
     display: none;
 }
+
+@media (max-width: 970px) {
+    .cart__content {
+        padding: 45px 70px;
+        width: 580px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart__content {
+        padding: 25px 50px;
+        width: 480px;
+    }
+    .cart__exit {
+        right: 51px;
+        top: 24px;
+    }
+}
+
+@media (max-width: 620px) {
+    .cart__content {
+        padding: 25px 50px;
+        width: 400px;
+    }
+
+    .cart_input {
+        width: 150px;
+    }
+    .cart__payment {
+        margin-top: 20px;
+        display: block;
+    }
+    .cart__payment_text {
+        margin-bottom: 20px;
+    }
+    .cart__button {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 520px) {
+    .cart__content {
+        padding: 20px 30px;
+        width: 350px;
+    }
+    .cart__payment_methods {
+        gap: 15px;
+    }
+    .cart__exit {
+        right: 31px;
+        top: 19px;
+    }
+}
+
+@media (max-width: 440px) {
+    .cart__content {
+        padding: 20px 20px;
+        width: 300px;
+    }
+    .cart__payment_methods {
+        gap: 10px;
+    }
+    .cart__exit {
+        right: 16px;
+        top: 19px;
+    }
+}
+
+@media (max-width: 390px) {
+    .cart__content {
+        padding: 15px 15px;
+        width: 270px;
+    }
+    .cart__payment_methods {
+        gap: 10px;
+    }
+    .cart__exit {
+        right: 13px;
+        top: 13px;
+    }
+}

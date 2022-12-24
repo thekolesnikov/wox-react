@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import cn from 'classnames';
 
@@ -11,7 +12,6 @@ import { useCart } from '../../context/CartContext';
 import { useModal } from '../../context/ModalContext';
 import { addToLocalStorage } from '../../utils/addToLocalStorage';
 import { getFromLocalStorage } from '../../utils/addToLocalStorage';
-import { useEffect } from 'react';
 
 function Header() {
     const language = useLanguage();
@@ -30,6 +30,16 @@ function Header() {
         }
     }, []);
 
+    // Burger
+    const [burgerActive, setburgerActive] = useState(false);
+
+    function openMenu() {
+        burgerActive ? setburgerActive(false) : setburgerActive(true);
+        !burgerActive
+            ? document.body.classList.add('hidden')
+            : document.body.classList.remove('hidden');
+    }
+
     return (
         <>
             <header className={cn('_container', styles.header)}>
@@ -46,10 +56,21 @@ function Header() {
                             Ukrainian Clothing brand
                         </div>
                     </div>
-                    <nav className={styles.header__center}>
+                    <nav
+                        className={cn(
+                            styles.header__center,
+                            burgerActive ? styles._active : ''
+                        )}
+                    >
                         <ul className={styles.header__nav}>
                             <li className={styles.header__item}>
                                 <NavLink
+                                    onClick={() => {
+                                        setburgerActive(false);
+                                        document.body.classList.remove(
+                                            'hidden'
+                                        );
+                                    }}
                                     className={({ isActive }) =>
                                         isActive
                                             ? styles.header__nav_item_active
@@ -68,6 +89,12 @@ function Header() {
                             </li>
                             <li className={styles.header__item}>
                                 <NavLink
+                                    onClick={() => {
+                                        setburgerActive(false);
+                                        document.body.classList.remove(
+                                            'hidden'
+                                        );
+                                    }}
                                     className={({ isActive }) =>
                                         isActive
                                             ? styles.header__nav_item_active
@@ -86,6 +113,12 @@ function Header() {
                             </li>
                             <li className={styles.header__item}>
                                 <NavLink
+                                    onClick={() => {
+                                        setburgerActive(false);
+                                        document.body.classList.remove(
+                                            'hidden'
+                                        );
+                                    }}
                                     className={({ isActive }) =>
                                         isActive
                                             ? styles.header__nav_item_active
@@ -104,6 +137,12 @@ function Header() {
                             </li>
                             <li className={styles.header__item}>
                                 <NavLink
+                                    onClick={() => {
+                                        setburgerActive(false);
+                                        document.body.classList.remove(
+                                            'hidden'
+                                        );
+                                    }}
                                     className={({ isActive }) =>
                                         isActive
                                             ? styles.header__nav_item_active
@@ -165,8 +204,18 @@ function Header() {
                             {cart.cartArr.length}
                         </div>
                     </div>
+                    <div
+                        onClick={openMenu}
+                        className={cn(
+                            styles.menu__icon,
+                            burgerActive ? styles._active : ''
+                        )}
+                    >
+                        <span></span>
+                    </div>
                 </div>
             </header>
+            <hr className={styles.header__hr} />
             <Cart />
         </>
     );

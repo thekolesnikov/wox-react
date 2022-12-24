@@ -23,7 +23,9 @@ function IdeaSection() {
                         ? 'first things'
                         : 'прежде всего'}
                 </div>
-                {/* <div class="idea__title_mobile">Idea, first things</div> */}
+                <div className={styles.idea__title_mobile}>
+                    Idea, first things
+                </div>
                 <div className={styles.idea__text}>
                     <p>
                         {language.language === 'EN'

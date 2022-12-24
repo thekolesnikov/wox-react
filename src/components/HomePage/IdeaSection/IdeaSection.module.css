@@ -111,3 +111,55 @@
         display: none;
     }
 }
+
+@media (max-width: 480px) {
+    .idea {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .idea__title {
+        display: none;
+    }
+    .idea__title_mobile {
+        display: block;
+        margin-bottom: 15px;
+        font-family: 'STRRETCH SANS';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 131%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .idea__article {
+        flex: none;
+        background: none;
+    }
+    .idea__article_image {
+        display: none;
+    }
+    .idea__article_text {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    .idea__article_title {
+        margin: 50px 0 15px 0;
+        font-family: 'STRRETCH SANS';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 131%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .idea__display_none_mobile {
+        background: linear-gradient(to top, white 0%, black 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

@@ -66,3 +66,31 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 480px) {
+    .learnmore__image1,
+    .learnmore__image2 {
+        display: none;
+    }
+    .learnmore__title {
+        font-family: 'STRRETCH SANS';
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 131%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .learnmore__text_mobile {
+        background: linear-gradient(to top, white 0%, black 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .learnmore__text_none {
+        display: none;
+    }
+    .learnmore__body {
+        padding-right: 0;
+    }
+}

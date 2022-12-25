@@ -17,8 +17,8 @@ function CollectionSection({ arrClothes, title, subtitle }) {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/not-made/'
-                                : '/ru/not-made/'
+                                ? '/wox-react/en/not-made/'
+                                : '/wox-react/ru/not-made/'
                         }
                         className={styles.wox2020__link_text}
                     >
@@ -29,8 +29,8 @@ function CollectionSection({ arrClothes, title, subtitle }) {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/not-made/'
-                                : '/ru/not-made/'
+                                ? '/wox-react/en/not-made/'
+                                : '/wox-react/ru/not-made/'
                         }
                         className={styles.wox2020__link_arrow}
                     >
@@ -45,8 +45,8 @@ function CollectionSection({ arrClothes, title, subtitle }) {
                             <Link
                                 to={
                                     language.language === 'EN'
-                                        ? `/en/purchase/${item.id}/`
-                                        : `/ru/purchase/${item.id}/`
+                                        ? `/wox-react/en/purchase/${item.id}/`
+                                        : `/wox-react/ru/purchase/${item.id}/`
                                 }
                                 className={styles.newcatalogue__image}
                             >
@@ -105,8 +105,8 @@ function CollectionSection({ arrClothes, title, subtitle }) {
                                 <Link
                                     to={
                                         language.language === 'EN'
-                                            ? `/en/purchase/${item.id}/`
-                                            : `/ru/purchase/${item.id}/`
+                                            ? `/wox-react/en/purchase/${item.id}/`
+                                            : `/wox-react/ru/purchase/${item.id}/`
                                     }
                                     className={styles.newcatalogue__link}
                                     data-buynow

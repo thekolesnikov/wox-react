@@ -12,21 +12,29 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<MainLayout />}>
+                <Route path="/wox-react" element={<MainLayout />}>
                     <Route index element={<HomePage />} />
-                    <Route path="/:lang" element={<HomePage />} />
+                    <Route path="/wox-react/:lang" element={<HomePage />} />
                     <Route
-                        path="/:lang/catalogue"
+                        path="/wox-react/:lang/catalogue"
                         element={<CataloguePage />}
                     />
                     <Route
-                        path="/:lang/purchase/:id"
+                        path="/wox-react/:lang/purchase/:id"
                         element={<PurchasePage />}
                     />
-                    <Route path="/:lang/about" element={<NotMade />} />
-                    <Route path="/:lang/contacts" element={<NotMade />} />
-                    <Route path="/:lang/not-made" element={<NotMade />} />
-                    <Route path="*" element={<NotFound />} />
+                    <Route
+                        path="/wox-react/:lang/about"
+                        element={<NotMade />}
+                    />
+                    <Route
+                        path="/wox-react/:lang/contacts"
+                        element={<NotMade />}
+                    />
+                    <Route
+                        path="/wox-react/:lang/not-made"
+                        element={<NotMade />}
+                    />
                 </Route>
             </Routes>
         </BrowserRouter>

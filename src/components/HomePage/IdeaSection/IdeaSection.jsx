@@ -52,8 +52,8 @@ function IdeaSection() {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/about'
-                                : '/ru/about'
+                                ? '/wox-react/en/about'
+                                : '/wox-react/ru/about'
                         }
                         className={styles.idea__link_text}
                     >
@@ -64,8 +64,8 @@ function IdeaSection() {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/about'
-                                : '/ru/about'
+                                ? '/wox-react/en/about'
+                                : '/wox-react/ru/about'
                         }
                     >
                         <img src={ideaArrow} alt="about" />

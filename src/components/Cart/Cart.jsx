@@ -257,6 +257,7 @@ function Cart() {
                         </span>
                     </div>
                     <form
+                        className={styles.cart__form}
                         onSubmit={(e) => {
                             submitForm(e);
                         }}

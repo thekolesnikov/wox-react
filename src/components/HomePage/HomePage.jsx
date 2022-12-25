@@ -5,8 +5,6 @@ import IdeaSection from './IdeaSection/IdeaSection';
 import CatalogueSection from './CatalogueSection/CatalogueSection';
 import LearnmoreSection from './LearnmoreSection/LearnmoreSection';
 
-import { useLanguage } from '../../context/LanguageContext';
-
 function HomePage() {
     return (
         <div className="_container">

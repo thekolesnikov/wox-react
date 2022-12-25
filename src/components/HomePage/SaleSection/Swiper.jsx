@@ -26,7 +26,7 @@ export default () => {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
+            scrollbar={{ draggable: true, el: styles.swiper_scrollbar }}
             effect={'fade'}
             fadeEffect={{ crossFade: true }}
             className={styles.swiper__container}

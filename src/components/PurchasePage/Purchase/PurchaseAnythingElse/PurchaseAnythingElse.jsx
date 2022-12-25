@@ -21,8 +21,8 @@ function PurchaseAnythingElse() {
                             <Link
                                 to={
                                     language.language === 'EN'
-                                        ? `/en/purchase/${item.id}/`
-                                        : `/ru/purchase/${item.id}/`
+                                        ? `/wox-react/en/purchase/${item.id}/`
+                                        : `/wox-react/ru/purchase/${item.id}/`
                                 }
                                 className={styles.newcatalogue__image}
                             >
@@ -81,8 +81,8 @@ function PurchaseAnythingElse() {
                                 <Link
                                     to={
                                         language.language === 'EN'
-                                            ? `/en/purchase/${item.id}/`
-                                            : `/ru/purchase/${item.id}/`
+                                            ? `/wox-react/en/purchase/${item.id}/`
+                                            : `/wox-react/ru/purchase/${item.id}/`
                                     }
                                     className={styles.newcatalogue__link}
                                     data-buynow

@@ -30,8 +30,8 @@ function SaleSection() {
                     <NavLink
                         to={
                             language.language === 'EN'
-                                ? '/en/catalogue'
-                                : '/ru/catalogue'
+                                ? '/wox-react/en/catalogue'
+                                : '/wox-react/ru/catalogue'
                         }
                         className={styles.sale__button}
                     >

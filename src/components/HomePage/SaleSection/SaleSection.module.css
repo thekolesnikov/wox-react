@@ -89,7 +89,8 @@
     max-width: 100%;
 }
 
-.sale__swiper {
+.swiper_scrollbar {
+    display: none;
 }
 
 .swiper__img {

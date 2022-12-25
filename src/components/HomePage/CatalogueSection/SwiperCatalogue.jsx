@@ -64,15 +64,6 @@ export default function SwiperCatalogue() {
                     </SwiperSlide>
                 );
             })}
-            {/* <SwiperSlide className={styles.swiper__slide}>
-                <img className={styles.swiper__img} src={caruselImg2} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiper__slide}>
-                <img className={styles.swiper__img} src={caruselImg3} alt="" />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiper__slide}>
-                <img className={styles.swiper__img} src={caruselImg4} alt="" />
-            </SwiperSlide> */}
         </Swiper>
     );
 }

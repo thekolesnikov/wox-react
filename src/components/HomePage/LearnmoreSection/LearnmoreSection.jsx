@@ -43,8 +43,8 @@ function LearnmoreSection() {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/catalogue'
-                                : '/ru/catalogue'
+                                ? '/wox-react/en/catalogue'
+                                : '/wox-react/ru/catalogue'
                         }
                         className={styles.learnmore__link_text}
                     >
@@ -55,8 +55,8 @@ function LearnmoreSection() {
                     <Link
                         to={
                             language.language === 'EN'
-                                ? '/en/catalogue'
-                                : '/ru/catalogue'
+                                ? '/wox-react/en/catalogue'
+                                : '/wox-react/ru/catalogue'
                         }
                     >
                         <img src={ideaArrow} alt="Go to catalogue" />

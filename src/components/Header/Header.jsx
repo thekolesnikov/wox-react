@@ -46,7 +46,11 @@ function Header() {
                 <div className={styles.header__wox}>
                     <div className={styles.header__leftside}>
                         <NavLink
-                            to={language.language === 'EN' ? '/en/' : '/ru/'}
+                            to={
+                                language.language === 'EN'
+                                    ? '/wox-react/en/'
+                                    : '/wox-react/ru/'
+                            }
                             className={styles.header__logo}
                         >
                             <img src={logo} alt="WOX logo" />
@@ -78,8 +82,8 @@ function Header() {
                                     }
                                     to={
                                         language.language === 'EN'
-                                            ? '/en/'
-                                            : '/ru/'
+                                            ? '/wox-react/en/'
+                                            : '/wox-react/ru/'
                                     }
                                 >
                                     {language.language === 'EN'
@@ -102,8 +106,8 @@ function Header() {
                                     }
                                     to={
                                         language.language === 'EN'
-                                            ? '/en/catalogue'
-                                            : '/ru/catalogue'
+                                            ? '/wox-react/en/catalogue'
+                                            : '/wox-react/ru/catalogue'
                                     }
                                 >
                                     {language.language === 'EN'
@@ -126,8 +130,8 @@ function Header() {
                                     }
                                     to={
                                         language.language === 'EN'
-                                            ? '/en/about'
-                                            : '/ru/about'
+                                            ? '/wox-react/en/about'
+                                            : '/wox-react/ru/about'
                                     }
                                 >
                                     {language.language === 'EN'
@@ -150,8 +154,8 @@ function Header() {
                                     }
                                     to={
                                         language.language === 'EN'
-                                            ? '/en/contacts'
-                                            : '/ru/contacts'
+                                            ? '/wox-react/en/contacts'
+                                            : '/wox-react/ru/contacts'
                                     }
                                 >
                                     {language.language === 'EN'

@@ -98,8 +98,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -111,8 +111,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -124,8 +124,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -137,8 +137,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -150,8 +150,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -172,8 +172,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -185,8 +185,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -198,8 +198,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -211,8 +211,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'
@@ -224,8 +224,8 @@ function Footer() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? '/en/not-made/'
-                                                : '/ru/not-made/'
+                                                ? '/wox-react/en/not-made/'
+                                                : '/wox-react/ru/not-made/'
                                         }
                                     >
                                         {language.language === 'EN'

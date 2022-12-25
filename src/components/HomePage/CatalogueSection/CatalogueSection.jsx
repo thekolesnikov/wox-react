@@ -63,8 +63,8 @@ function CatalogueSection() {
                                 <Link
                                     to={
                                         language.language === 'EN'
-                                            ? `/en/purchase/${item.id}/`
-                                            : `/ru/purchase/${item.id}/`
+                                            ? `/wox-react/en/purchase/${item.id}/`
+                                            : `/wox-react/ru/purchase/${item.id}/`
                                     }
                                     className={styles.catalogue__image}
                                 >
@@ -82,8 +82,8 @@ function CatalogueSection() {
                                     <Link
                                         to={
                                             language.language === 'EN'
-                                                ? `/en/purchase/${item.id}/`
-                                                : `/ru/purchase/${item.id}/`
+                                                ? `/wox-react/en/purchase/${item.id}/`
+                                                : `/wox-react/ru/purchase/${item.id}/`
                                         }
                                         className={styles.catalogue__link}
                                         data-buynow
@@ -105,8 +105,8 @@ function CatalogueSection() {
                 <Link
                     to={
                         language.language === 'EN'
-                            ? '/en/catalogue'
-                            : '/ru/catalogue'
+                            ? '/wox-react/en/catalogue'
+                            : '/wox-react/ru/catalogue'
                     }
                     className={styles.catalogue__button}
                 >

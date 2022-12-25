@@ -10,6 +10,7 @@
 }
 
 .subscribe {
+    position: relative;
     flex: 0 1 38.3%;
 }
 
@@ -189,6 +190,7 @@
 }
 
 .email__error {
+    position: absolute;
     margin-top: 5px;
     color: red;
     font-size: 18px;

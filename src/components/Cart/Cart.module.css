@@ -171,7 +171,12 @@ label {
     border-bottom: 1px solid #000000;
 }
 
+.cart__form {
+    position: relative;
+}
+
 .cart__error {
+    position: absolute;
     color: red;
     font-size: 12px;
     opacity: 0.8;

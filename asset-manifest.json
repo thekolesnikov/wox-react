@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wox-react/static/css/main.ff70f260.css",
-    "main.js": "/wox-react/static/js/main.5f2c59fe.js",
+    "main.css": "/wox-react/static/css/main.86daf8af.css",
+    "main.js": "/wox-react/static/js/main.995b82b4.js",
     "static/media/carusel4.jpg": "/wox-react/static/media/carusel4.a0eee4747b6a8eacdd9a.jpg",
     "static/media/carusel2.jpg": "/wox-react/static/media/carusel2.898b216b366addda1704.jpg",
     "static/media/carusel3.jpg": "/wox-react/static/media/carusel3.f17627aad038300f5772.jpg",
@@ -45,11 +45,11 @@
     "static/media/Minuspurchase_minus.svg": "/wox-react/static/media/Minuspurchase_minus.9bdf7c725a0f5e4532f8167ddaa5ef91.svg",
     "static/media/idea_arrow_left.svg": "/wox-react/static/media/idea_arrow_left.a8a46b314b5812b91b0fef150f1811f1.svg",
     "static/media/blackarrow.svg": "/wox-react/static/media/blackarrow.f19f19382ca8ceb122823958014b16f9.svg",
-    "main.ff70f260.css.map": "/wox-react/static/css/main.ff70f260.css.map",
-    "main.5f2c59fe.js.map": "/wox-react/static/js/main.5f2c59fe.js.map"
+    "main.86daf8af.css.map": "/wox-react/static/css/main.86daf8af.css.map",
+    "main.995b82b4.js.map": "/wox-react/static/js/main.995b82b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff70f260.css",
-    "static/js/main.5f2c59fe.js"
+    "static/css/main.86daf8af.css",
+    "static/js/main.995b82b4.js"
   ]
 }

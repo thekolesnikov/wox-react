@@ -1,5 +1,6 @@
 {
     "name": "wox-react",
+    "homepage": "https://thekolesnikov.github.io/wox-react/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

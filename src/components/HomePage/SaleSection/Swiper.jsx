@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './SaleSection.module.css';
@@ -12,12 +12,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
 
 export default () => {
     return (
         <Swiper
             loop
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Pagination, Autoplay, EffectFade]}
             autoplay={{
                 delay: 5000,
             }}
@@ -27,6 +28,7 @@ export default () => {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             effect={'fade'}
+            fadeEffect={{ crossFade: true }}
             className={styles.swiper__container}
         >
             <SwiperSlide className={styles.swiper__slide}>

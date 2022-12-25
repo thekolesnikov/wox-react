@@ -31,6 +31,9 @@
 .catalogue__image {
     margin-bottom: 18px;
 }
+.catalogue__image img {
+    width: 100%;
+}
 
 .catalogue__image img:hover {
     transition: all 0.6s ease 0s;
@@ -114,6 +117,27 @@
     background: #c75def;
     transform: scale(1.01);
     color: #ffffff;
+}
+.swiper__slide {
+    width: auto;
+}
+.catalogue__swiper {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .catalogue__slider {
+        margin: 0 -10px 80px -10px;
+    }
+    .catalogue__slider_line {
+        display: none;
+    }
+    .catalogue__swiper {
+        display: block;
+    }
+    .swiper_scrollbar {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {

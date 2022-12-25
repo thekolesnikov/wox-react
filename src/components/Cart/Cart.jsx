@@ -11,6 +11,7 @@ import plus from './img/Pluspurchase_plus.svg';
 import { useCart } from '../../context/CartContext';
 import { useModal } from '../../context/ModalContext';
 import { useLanguage } from '../../context/LanguageContext';
+import { sendToServer } from '../../utils/sentToServer';
 
 function Cart() {
     const language = useLanguage();
@@ -108,6 +109,7 @@ function Cart() {
                 phone: phoneValue,
                 paymentMethod: paymentActive,
             };
+            sendToServer(submitArr, 'orders.json');
             cart.setCartArr([]);
             setPhoneValue('');
             setNameValue('');
@@ -254,7 +256,11 @@ function Cart() {
                             </span>
                         </span>
                     </div>
-                    <form onSubmit={(e) => submitForm(e)}>
+                    <form
+                        onSubmit={(e) => {
+                            submitForm(e);
+                        }}
+                    >
                         <div className={styles.cart__label}>
                             <label>
                                 {language.language === 'EN' ? 'Name:' : 'Имя:'}

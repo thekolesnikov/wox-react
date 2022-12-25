@@ -5,6 +5,7 @@ import cn from 'classnames';
 import styles from './Footer.module.css';
 import blackArrowNext from './img/blackarrow.svg';
 import { useLanguage } from '../../context/LanguageContext';
+import { sendToServer } from '../../utils/sentToServer';
 
 function Footer() {
     const language = useLanguage();
@@ -62,7 +63,6 @@ function Footer() {
                                     validateEmail(e);
                                     setEmailValue(e.target.value);
                                 }}
-                                // onBlur={() => setEmailDirty(false)}
                             />
                         </label>
                         <button
@@ -73,6 +73,9 @@ function Footer() {
                                     : styles.subscribe__email_arrow
                             }
                             disabled={!emailDirty}
+                            onClick={() => {
+                                sendToServer(emailValue, 'emails.json');
+                            }}
                         >
                             <img src={blackArrowNext} alt="next" />
                         </button>

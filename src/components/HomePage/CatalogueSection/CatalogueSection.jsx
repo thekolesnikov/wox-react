@@ -7,46 +7,49 @@ import catalogueImg2 from './img/catalogueImg2.png';
 import catalogueImg3 from './img/catalogueImg3.png';
 import catalogueImg4 from './img/catalogueImg4.png';
 import catalogueImg5 from './img/catalogueImg5.png';
+import SwiperCatalogue from './SwiperCatalogue';
+
+export const catalogueItems = [
+    {
+        img: catalogueImg1,
+        descriptionEn: 'Man`s suit purple',
+        descriptionRu: 'Мужской костюм - фиолетовый',
+        price: '$75',
+        id: 3,
+    },
+    {
+        img: catalogueImg2,
+        descriptionEn: 'Woman`s suit coffee',
+        descriptionRu: 'Женский костюм - кофейный',
+        price: '$75',
+        id: 1,
+    },
+    {
+        img: catalogueImg3,
+        descriptionEn: 'Woman`s suit lemon',
+        descriptionRu: 'Женский костюм - жёлтый',
+        price: '$75',
+        id: 4,
+    },
+    {
+        img: catalogueImg4,
+        descriptionEn: 'Man`s longsleeve white',
+        descriptionRu: 'Мужской лонгслив - белый',
+        price: '$55',
+        id: 10,
+    },
+    {
+        img: catalogueImg5,
+        descriptionEn: 'Woman`s suit purple',
+        descriptionRu: 'Женский костюм - фиолетовый',
+        price: '$75',
+        id: 2,
+    },
+];
 
 function CatalogueSection() {
     const language = useLanguage();
-    const catalogueItems = [
-        {
-            img: catalogueImg1,
-            descriptionEn: 'Man`s suit purple',
-            descriptionRu: 'Мужской костюм - фиолетовый',
-            price: '$75',
-            id: 3,
-        },
-        {
-            img: catalogueImg2,
-            descriptionEn: 'Woman`s suit coffee',
-            descriptionRu: 'Женский костюм - кофейный',
-            price: '$75',
-            id: 1,
-        },
-        {
-            img: catalogueImg3,
-            descriptionEn: 'Woman`s suit lemon',
-            descriptionRu: 'Женский костюм - жёлтый',
-            price: '$75',
-            id: 4,
-        },
-        {
-            img: catalogueImg4,
-            descriptionEn: 'Man`s longsleeve white',
-            descriptionRu: 'Мужской лонгслив - белый',
-            price: '$55',
-            id: 10,
-        },
-        {
-            img: catalogueImg5,
-            descriptionEn: 'Woman`s suit purple',
-            descriptionRu: 'Женский костюм - фиолетовый',
-            price: '$75',
-            id: 2,
-        },
-    ];
+
     return (
         <section className={styles.catalogue}>
             <div className={styles.catalogue__slider}>
@@ -93,6 +96,9 @@ function CatalogueSection() {
                             </div>
                         );
                     })}
+                </div>
+                <div className={styles.catalogue__swiper}>
+                    <SwiperCatalogue />
                 </div>
             </div>
             <button>

@@ -11,8 +11,6 @@ import { useLanguage } from '../../context/LanguageContext';
 
 function MainLayout() {
     ScrollToTop();
-    console.log(111);
-
     return (
         <LanguageProvider>
             <CartProvider>
